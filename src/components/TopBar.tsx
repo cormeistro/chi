@@ -1,10 +1,25 @@
 import styles from "./TopBar.module.css";
 import Logo from "./assets/logo.png";
 import { Link, NavLink } from "react-router-dom";
+import { useEffect } from "react";
 
 const TopBar = () => {
+  useEffect(() => {
+    const compElement = document.querySelector(".topBar");
+    const animatedElements = compElement?.querySelectorAll(".animation");
+
+    const topBarObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("animation-show");
+      });
+    });
+
+    animatedElements &&
+      animatedElements.forEach((el) => topBarObserver.observe(el));
+  });
+
   return (
-    <div className={styles.topBar}>
+    <div className={`${styles.topBar} topBar`}>
       <div
         className={`${styles.logo} animation`}
         style={{ transform: "translateY(-100%)" }}

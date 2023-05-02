@@ -4,20 +4,20 @@ import { useEffect, useState } from "react";
 
 interface Stat {
   endingNumber: number;
-  startCount: boolean;
+  allowCount: boolean;
   text: string;
 }
 
-const Stat = ({ endingNumber, startCount, text }: Stat) => {
+const Stat = ({ endingNumber, allowCount, text }: Stat) => {
   const [currentNumber, setCurrentNumber] = useState(0);
 
   useEffect(() => {
-    if (currentNumber < endingNumber && startCount) {
+    if (currentNumber < endingNumber && allowCount) {
       setTimeout(() => {
         setCurrentNumber(endingNumber / 50 + currentNumber);
       }, 50);
-    } else if (startCount) setCurrentNumber(endingNumber);
-  }, [currentNumber, startCount]);
+    } else if (allowCount) setCurrentNumber(endingNumber);
+  }, [currentNumber, allowCount]);
 
   return (
     <div

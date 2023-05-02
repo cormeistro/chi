@@ -5,7 +5,7 @@ const NotificationBar = () => {
   return (
     <div className={styles.notificationBar}>
       <p>Introducing CHiME - our innovative suite of infrared products</p>
-      <Link className="btn btn-black" to="/chime">
+      <Link className="btn btn-black" to="/CHiME">
         <p>Learn More</p>
       </Link>
     </div>

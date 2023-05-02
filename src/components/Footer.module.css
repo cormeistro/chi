@@ -1,3 +1,17 @@
+/* SMALL SCREENS */
+@media screen and (max-width: 800px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+/* BIG SCREENS */
+@media screen and (min-width: 800px) {
+  .footer {
+    justify-content: flex-start;
+  }
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -10,7 +24,6 @@
   color: white;
   display: flex;
   gap: 50px;
-  justify-content: center;
 }
 
 .footer a {

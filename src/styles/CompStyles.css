@@ -39,6 +39,18 @@
   cursor: pointer;
 }
 
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: lightgray -3px 3px 5px;
+  color: white;
+}
+
+.btn-primary:hover {
+  border-color: var(--primary-dark);
+  background-color: var(--primary-dark);
+}
+
 .btn-secondary {
   background-color: white;
   border-color: var(--secondary);
