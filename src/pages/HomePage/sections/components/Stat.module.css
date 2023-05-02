@@ -1,0 +1,23 @@
+.stat {
+  aspect-ratio: 4/3;
+  gap: 10px;
+  width: 300px;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.stat h1 {
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.stat p {
+  font-weight: 300;
+  font-size: 24px;
+}

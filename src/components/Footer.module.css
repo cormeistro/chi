@@ -1,0 +1,49 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer {
+  align-items: flex-start;
+  background: var(--black);
+  color: white;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.footer a {
+  color: var(--secondary);
+  text-decoration: unset;
+}
+
+.footer a:hover {
+  color: var(--secondary-bright);
+}
+
+.footer h1,
+.footer h2 {
+  margin-bottom: 10px;
+}
+
+.footer h1 {
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.footer h2 {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  color: darkgray;
+  font-size: 16px;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  font-size: 26px;
+}

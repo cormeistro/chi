@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  border-bottom: solid 3px transparent;
+  color: unset;
+  padding-bottom: 2px;
+  text-decoration: unset;
+}
+
+nav .active {
+  border-bottom-color: var(--secondary);
+}
+
+nav a:hover {
+  border-bottom-color: var(--secondary);
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}

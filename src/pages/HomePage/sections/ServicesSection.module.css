@@ -1,0 +1,20 @@
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.servicesSection {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.servicesSection h1 {
+  border-bottom: solid 5px var(--secondary);
+  font-size: 48px;
+  font-weight: 900;
+  max-width: 300px;
+}

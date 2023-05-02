@@ -1,0 +1,16 @@
+:root {
+  --black: #222;
+  --gold: #98782c;
+
+  --primary-dark: #6f724a;
+  --primary: #949c53;
+  --primary-bright: #bfc780;
+
+  --secondary-dark: #455769;
+  --secondary: #627e9c;
+  --secondary-bright: #93b0cf;
+}
+
+body {
+  color: var(--black);
+}
