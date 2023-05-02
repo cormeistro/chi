@@ -1,25 +1,20 @@
 import NotificationBar from "./NotificationBar";
 import TopBar from "./TopBar";
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const StickyTop = () => {
   const [hideNotificationBar, setHideNotificationBar] = useState(false);
-  const location = useLocation();
 
-  useEffect(() => {
-    if (location.pathname.toUpperCase() === "/CHIME")
-      setHideNotificationBar(true);
-    else setHideNotificationBar(false);
-  }, [location.pathname]);
+  function handleHideNotificationBar(bool: boolean) {
+    setHideNotificationBar(bool);
+  }
 
   return (
-    <div
-      className={`sticky-top ${
-        hideNotificationBar ? "animate-up-100 dark-theme" : ""
-      }`}
-    >
-      <NotificationBar />
+    <div className={`sticky-top ${hideNotificationBar ? "dark-theme" : ""}`}>
+      <NotificationBar
+        isHidden={hideNotificationBar}
+        onHide={handleHideNotificationBar}
+      />
       <TopBar darkTheme={hideNotificationBar} />
     </div>
   );
