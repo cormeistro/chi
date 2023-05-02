@@ -63,6 +63,17 @@
   color: white;
 }
 
+.btn-secondary-dark {
+  background-color: var(--black);
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+.btn-secondary-dark:hover {
+  background-color: var(--secondary);
+  color: white;
+}
+
 .btn-black {
   background-color: var(--black);
   border-color: white;

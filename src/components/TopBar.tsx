@@ -1,9 +1,15 @@
 import styles from "./TopBar.module.css";
 import Logo from "./assets/logo.png";
+import LightLogo from "./assets/logo-light.png";
 import { Link, NavLink } from "react-router-dom";
 import { useEffect } from "react";
+// import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
-const TopBar = () => {
+interface Props {
+  darkTheme: boolean;
+}
+
+const TopBar = ({ darkTheme }: Props) => {
   useEffect(() => {
     const compElement = document.querySelector(".topBar");
     const animatedElements = compElement?.querySelectorAll(".animation");
@@ -25,7 +31,11 @@ const TopBar = () => {
         style={{ transform: "translateY(-100%)" }}
       >
         <a href="/">
-          <img src={Logo} alt="Charter House Innovations Logo" />
+          {darkTheme ? (
+            <img src={LightLogo} alt="Charter House Innovations Logo" />
+          ) : (
+            <img src={Logo} alt="Charter House Innovations Logo" />
+          )}
         </a>
       </div>
       <nav className="animation" style={{ transform: "translateY(-100%)" }}>
@@ -49,7 +59,7 @@ const TopBar = () => {
           </NavLink>
           <ul>
             <li>
-              <NavLink to="/chime">CHiME</NavLink>
+              <NavLink to="/CHiME">CHiME</NavLink>
             </li>
           </ul>
         </div>
@@ -70,7 +80,12 @@ const TopBar = () => {
           </ul>
         </div>
         <NavLink to="/payments">Make a Payment</NavLink>
-        <Link className="btn btn-secondary" to="/contact">
+        <Link
+          className={`btn ${
+            darkTheme ? "btn-secondary-dark" : "btn-secondary"
+          }`}
+          to="/contact"
+        >
           <p>Contact Us</p>
         </Link>
       </nav>

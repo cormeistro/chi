@@ -1,3 +1,17 @@
+/* SMALL SCREENS */
+@media screen and (max-width: 800px) {
+  .topBar {
+    padding: 25px;
+  }
+}
+
+/* BIG SCREENS */
+@media screen and (min-width: 800px) {
+  .topBar {
+    padding: 25px 100px;
+  }
+}
+
 .dropDown:hover > * {
   visibility: visible;
 }
@@ -35,12 +49,16 @@
   background-color: var(--secondary);
 }
 
+.icon {
+  cursor: pointer;
+  font-size: 32px;
+}
+
 .topBar {
   align-items: center;
-  background-color: white;
   display: flex;
   justify-content: space-between;
-  padding: 25px 100px;
+  overflow: hidden;
   user-select: none;
 }
 

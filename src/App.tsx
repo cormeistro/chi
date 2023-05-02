@@ -1,7 +1,7 @@
 // COMPONENTS
 import Footer from "./components/Footer";
-import NotificationBar from "./components/NotificationBar";
-import TopBar from "./components/TopBar";
+import StickyTop from "./components/StickyTop";
+import ScrollToTop from "./components/ScrollToTop";
 
 import { ChimePage, HomePage } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -17,10 +17,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <div className="sticky-top">
-          <NotificationBar />
-          <TopBar />
-        </div>
+        <ScrollToTop />
+        <StickyTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/CHiME" element={<ChimePage />} />

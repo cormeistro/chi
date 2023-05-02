@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+.dark-theme {
+  background: var(--black) !important;
+  color: white;
+}
+
 nav a {
   border-bottom: solid 3px transparent;
   color: unset;
@@ -20,7 +25,9 @@ nav a:hover {
 }
 
 .sticky-top {
+  background-color: white;
   position: sticky;
   top: 0;
+  transition: all 500ms;
   z-index: 99;
 }
