@@ -42,7 +42,6 @@
 .btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
-  box-shadow: var(--gray-faded) -3px 3px 5px;
   color: white;
 }
 
@@ -53,7 +52,6 @@
 
 .btn-outline {
   border-color: var(--primary);
-  box-shadow: var(--gray-faded) -3px 3px 5px;
   color: white;
 }
 
@@ -61,10 +59,18 @@
   background-color: var(--primary);
 }
 
+.btn-secondary-outline {
+  border-color: var(--secondary);
+  color: white;
+}
+
+.btn-secondary-outline:hover {
+  background-color: var(--secondary);
+}
+
 .btn-secondary {
   background-color: white;
   border-color: var(--secondary);
-  box-shadow: lightgray -3px 3px 5px;
   color: var(--secondary);
 }
 
@@ -93,6 +99,14 @@
 .btn-black:hover {
   background-color: white;
   color: var(--black);
+}
+
+.box-shadow-faded {
+  box-shadow: var(--gray-faded) -3px 3px 5px;
+}
+
+.box-shadow-light {
+  box-shadow: lightgray -3px 3px 5px;
 }
 
 .icon {

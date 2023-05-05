@@ -12,43 +12,6 @@
   }
 }
 
-.dropDown:hover > * {
-  visibility: visible;
-}
-
-.dropDown a {
-  align-items: center;
-  display: flex;
-  gap: 5px;
-  position: relative;
-}
-
-.dropDown a span {
-  font-size: 8px;
-  color: gray;
-}
-
-.dropDown ul {
-  background-color: var(--secondary-dark);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-weight: 400;
-  padding: 5px 0px;
-  position: absolute;
-  visibility: hidden;
-  z-index: 99;
-}
-
-.dropDown li {
-  list-style: none;
-  padding: 10px 50px 10px 15px;
-}
-
-.dropDown li:hover {
-  background-color: var(--secondary);
-}
-
 .icon {
   cursor: pointer;
   font-size: 32px;
@@ -59,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   overflow: visible;
+  position: relative;
   user-select: none;
 }
 

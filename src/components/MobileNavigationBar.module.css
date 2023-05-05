@@ -1,0 +1,25 @@
+.icon {
+  font-size: 40px;
+}
+
+.navigation {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: solid 1px var(--gray-faded);
+  bottom: 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  left: 0px;
+  right: 0px;
+  padding: 50px 25px;
+  position: absolute;
+  transform: translateY(100%);
+  z-index: 99;
+}
+
+.dropDown ul {
+  display: none;
+}

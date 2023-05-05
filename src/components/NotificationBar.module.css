@@ -1,3 +1,20 @@
+/* SMALL SCREENS */
+@media screen and (max-width: 800px) {
+  .notificationBar {
+    padding: 15px 25px;
+  }
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 800px) {
+  .notificationBar {
+    padding: 15px 50px;
+  }
+  .notificationBar p span::after {
+    content: " - our innovative suite of infrared products";
+  }
+}
+
 .notificationBar {
   align-items: center;
   background-color: var(--black);
@@ -6,7 +23,6 @@
   font-weight: 700;
   gap: 20px;
   justify-content: center;
-  padding: 15px 50px;
 }
 
 .notificationBar a {

@@ -1,0 +1,13 @@
+/* SMALL SCREENS */
+@media screen and (max-width: 1200px) {
+  .fullNav {
+    display: none;
+  }
+}
+
+/* LARGE SCREENS */
+@media screen and (min-width: 1200px) {
+  .mobileNav {
+    display: none;
+  }
+}
