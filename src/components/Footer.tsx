@@ -2,6 +2,7 @@ import styles from "./Footer.module.css";
 import { linkedInURL, facebookURL, instagramURL } from "../Links";
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -64,17 +65,17 @@ const Footer = () => {
       </div>
       <div className={styles.column}>
         <h2>More Pages</h2>
-        <a href="/about">Learn more about Charter-House</a>
-        <a href="/about/sustainability">Our sustainable commitment</a>
-        <a href="/about/careers">Start a career with us</a>
-        <a href="/about/contact">Contact us directly</a>
+        <Link to="/">Learn more about Charter-House</Link>
+        <Link to="/">Our sustainable commitment</Link>
+        <Link to="/">Start a career with us</Link>
+        <Link to="/">Contact us directly</Link>
         <br />
         <h3>Manufacturing</h3>
-        <a href="/furniture">Furniture</a>
-        <a href="/chime">CHiME</a>
+        <Link to="/">Furniture</Link>
+        <Link to="/">CHiME</Link>
         <br />
         <h3>Payments</h3>
-        <a href="/payments">Make a Payment</a>
+        <Link to="/">Make a Payment</Link>
       </div>
       <div className={styles.column}>
         <h2>

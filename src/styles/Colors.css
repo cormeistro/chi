@@ -1,9 +1,15 @@
 :root {
+  --gray-dark: #333;
+  --gray-faded: #555;
+  --gray-medium: #777;
+
   --black: #222;
   --gold: #98782c;
 
   --primary-dark: #6f724a;
+  --primary-faded: #848b4a;
   --primary: #949c53;
+  --primary-light: #a4ac6c;
   --primary-bright: #bfc780;
 
   --secondary-dark: #455769;

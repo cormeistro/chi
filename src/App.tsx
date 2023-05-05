@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import StickyTop from "./components/StickyTop";
 import ScrollToTop from "./components/ScrollToTop";
 
-import { ChimePage, HomePage } from "./pages";
+import { HomePage } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // CSS Files
@@ -21,7 +21,6 @@ function App() {
         <StickyTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/CHiME" element={<ChimePage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

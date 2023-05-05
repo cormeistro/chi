@@ -42,13 +42,23 @@
 .btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
-  box-shadow: lightgray -3px 3px 5px;
+  box-shadow: var(--gray-faded) -3px 3px 5px;
   color: white;
 }
 
 .btn-primary:hover {
-  border-color: var(--primary-dark);
-  background-color: var(--primary-dark);
+  border-color: var(--primary-light);
+  background-color: var(--primary-light);
+}
+
+.btn-outline {
+  border-color: var(--primary);
+  box-shadow: var(--gray-faded) -3px 3px 5px;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
 }
 
 .btn-secondary {
